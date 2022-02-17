@@ -39,15 +39,13 @@ form > input[type="text"] {
 
 form > div {
   display: flex;
+  width: 70%;
+  align-self: center;
   flex-direction: row;
-  margin-left: 14.6%;
+  align-self: center;
   justify-content: space-between;
   margin-top: 0.5%;
   margin-bottom: 4%;
-}
-
-form > div > label {
-  margin-right: 17.5%;
 }
 
 form > div > label > a {
