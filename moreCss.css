@@ -2,32 +2,39 @@
   font-family: sans-serif;
 }
 
-article {
-  float: left;
-  width: 50%; 
+.Layout {
+  display: flex;
 }
 
-h1 {
+.Layout__leftarea {
+  width: 50%;
+}
+
+.Layout__title {
   color: red;
   text-align: center;
   margin-bottom: 20%;
 }
 
-section {
+.Layout__maintext {
   text-align: center;
   margin-bottom: 8%;
 }
 
-form {
+.loginForm {
   display: flex;
   flex-direction: column;
 }
 
-form > input[type="email"],
-form > input[type="text"] {
+.loginForm__elements {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.loginForm__inputs {
   align-self: center;
   width: 70%;
-  margin-top: 1%;
   height: 3em;
 }
 
@@ -37,7 +44,7 @@ form > input[type="text"] {
   position: absolute;
 }
 
-form > div {
+.loginForm__extras {
   display: flex;
   width: 70%;
   align-self: center;
@@ -48,33 +55,29 @@ form > div {
   margin-bottom: 4%;
 }
 
-form > div > label > a {
+.loginForm--decoration {
   text-decoration: none;
 }
 
-button {
+.loginForm__continueButton {
   width: 70%;
   align-self: center;
+  font-size: 1.4em;
   background-color: rgb(0, 187, 255);
   color: white;
   padding: 10px;
 }
 
-button:hover {
+.loginForm__continueButton:hover {
   background-color: rgba(0, 187, 255, 0.85);
   cursor: pointer;
 }
 
-body > article > div {
+body main > div {
   text-align: center;
   margin-top: 2%;
 }
 
-body > article > div > a {
-  text-decoration: none;
-}
-
 img {
-  float: right;
   width: 50%;
 }
